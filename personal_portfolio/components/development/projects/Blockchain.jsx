@@ -1,9 +1,5 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 // import { ProjectCard } from "../../ProjectCard";
-import projImg1 from "/public/assets/img/project-img1.png";
-import projImg2 from "/public/assets/img/project-img2.png";
-import projImg3 from "/public/assets/img/project-img3.png";
-import colorSharp2 from "/public/assets/img/color-sharp2.png";
 
 const NotUploaded = () => {
   return (
@@ -14,39 +10,6 @@ const NotUploaded = () => {
 };
 
 export const Blockchain = () => {
-  const projects = [
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-  ];
-
   return (
     <section className="py-20 px-0 realtive bg-black blockchain" id="projects">
       <Container>
@@ -99,7 +62,6 @@ export const Blockchain = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2} alt=""></img>
     </section>
   );
 };

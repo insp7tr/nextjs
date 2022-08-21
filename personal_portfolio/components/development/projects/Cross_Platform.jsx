@@ -44,8 +44,10 @@ export const CrossPlatform = () => {
                 <Tab.Content id="slideInUp">
                   <Tab.Pane eventKey="one">
                     <Row>
-                      {projects["flutter"].map((project, index) => {
-                        return <ProjectCard key={index} {...project} />;
+                      {projects?.map((project, index) => {
+                        if (project?.project === "flutter") {
+                          return <ProjectCard key={index} {...project} />;
+                        }
                       })}
                     </Row>
                   </Tab.Pane>

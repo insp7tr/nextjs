@@ -4,16 +4,14 @@ import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import { VscGithub } from "react-icons/vsc";
 import { ImWink2 } from "react-icons/im";
 import Link from "next/link";
+import { fetchApi, baseUrl } from "../../utils/fetchApi";
 
-import projects from "../../utils/data";
+import projectsData from "../../utils/data";
 import ImageScrollbar from "../../components/ImageScrollbar";
 import { Box, Text, Flex } from "@chakra-ui/react";
 
-const ProjectDetails = () => {
-  const router = useRouter();
-  const { id, name } = router.query;
-
-  const {
+const ProjectDetails = ({
+  project: {
     projectId,
     project,
     title,
@@ -27,7 +25,8 @@ const ProjectDetails = () => {
     endDate,
     completed,
     github,
-  } = projects[name][id - 1];
+  },
+}) => {
   return (
     <div className="project-details-page bg-black">
       <Link href={"/"} passHref>
@@ -182,4 +181,13 @@ const ProjectDetails = () => {
   );
 };
 
+export async function getServerSideProps({ params: { id } }) {
+  const data = projectsData[id];
+
+  return {
+    props: {
+      project: data,
+    },
+  };
+}
 export default ProjectDetails;

@@ -57,23 +57,29 @@ export const Web = () => {
                 <Tab.Content id="slideInUp">
                   <Tab.Pane eventKey="one">
                     <Row>
-                      {projects["html_css_js"].map((project, index) => (
-                        <ProjectCard key={index} {...project} />
-                      ))}
+                      {projects?.map((project, index) => {
+                        if (project?.project === "html_css_js") {
+                          return <ProjectCard key={index} {...project} />;
+                        }
+                      })}
                     </Row>
                   </Tab.Pane>
                   <Tab.Pane eventKey="two">
                     <Row>
-                      {projects["react"].map((project, index) => (
-                        <ProjectCard key={index} {...project} />
-                      ))}
+                      {projects?.map((project, index) => {
+                        if (project?.project === "react") {
+                          return <ProjectCard key={index} {...project} />;
+                        }
+                      })}
                     </Row>
                   </Tab.Pane>
                   <Tab.Pane eventKey="three">
                     <Row>
-                      {projects["nextjs"].map((project, index) => (
-                        <ProjectCard key={index} {...project} />
-                      ))}
+                      {projects?.map((project, index) => {
+                        if (project?.project === "nextjs") {
+                          return <ProjectCard key={index} {...project} />;
+                        }
+                      })}
                     </Row>
                   </Tab.Pane>
                 </Tab.Content>

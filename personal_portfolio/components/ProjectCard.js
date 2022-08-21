@@ -18,7 +18,7 @@ export const ProjectCard = ({
   github,
 }) => {
   return (
-    <Link href={`/project/${projectId}?name=${project}`}>
+    <Link href={`/project/${projectId - 1}`}>
       <Col size={12} sm={6} md={4}>
         <div className="proj-imgbx w-full h-64">
           <Image src={bannerImgUrl} layout="fill" alt="" />
