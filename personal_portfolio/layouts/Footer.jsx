@@ -8,15 +8,10 @@ const Footer = () => {
   return (
     <footer className="text-center text-2xl mt-10 ">
       <ul className="permalinks pl-0">
-        <li>
-          <div className="">
-            <a
-              href="#"
-              className="text-purple-500 no-underline hover:text-purple-300"
-            >
-              Home
-            </a>
-          </div>
+        <li className="text-purple-500 no-underline hover:text-purple-300">
+          <a href="#" className="">
+            Home
+          </a>
         </li>
         <li>
           <a

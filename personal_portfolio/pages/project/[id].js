@@ -1,7 +1,8 @@
 import { useRouter } from "next/router";
 import React from "react";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
-import { VscDebugBreakpointLog } from "react-icons/vsc";
+import { VscGithub } from "react-icons/vsc";
+import { ImWink2 } from "react-icons/im";
 import Link from "next/link";
 
 import projects from "../../utils/data";
@@ -17,13 +18,15 @@ const ProjectDetails = () => {
     project,
     title,
     description,
-    features,
     bannerImgUrl,
+    bannerType,
     images,
+    features,
     packages,
     startDate,
     endDate,
     completed,
+    github,
   } = projects[name][id - 1];
   return (
     <div className="project-details-page bg-black">
@@ -33,11 +36,16 @@ const ProjectDetails = () => {
         </button>
       </Link>
       <Box maxWidth="1000px" margin="auto" p="4">
-        <Box w="full" p="6">
-          <Text fontSize="3xl" marginBottom="2" fontWeight="bold">
+        <Flex className="justify-center items-center mb-3">
+          <Text
+            fontSize="3xl"
+            marginBottom="2"
+            fontWeight="bold"
+            className="tagline"
+          >
             {title}
           </Text>
-        </Box>
+        </Flex>
         {images && <ImageScrollbar data={images} />}
         <Box>
           <Text
@@ -45,18 +53,29 @@ const ProjectDetails = () => {
             marginBottom="2"
             marginTop="10"
             fontWeight="bold"
+            className="tagline"
           >
             Description
           </Text>
-          <Text lineHeight="2">{description}</Text>
+          <Text lineHeight="2" fontSize="xl">
+            {description}
+          </Text>
         </Box>
         <Box>
-          <Text fontSize="3xl" marginBottom="2" marginTop="7" fontWeight="bold">
-            Features
-          </Text>
+          {features && (
+            <Text
+              fontSize="3xl"
+              marginBottom="2"
+              marginTop="7"
+              fontWeight="bold"
+              className="tagline"
+            >
+              Features
+            </Text>
+          )}
           <ul>
-            {features.map((feature, index) => (
-              <Text key={index}>
+            {features?.map((feature, index) => (
+              <Text key={index} fontSize="xl">
                 <li className="p-1">- {feature}</li>
               </Text>
             ))}
@@ -77,8 +96,12 @@ const ProjectDetails = () => {
               borderColor="gray.100"
               p="3"
             >
-              <Text fontWeight="bold">Start Date:</Text>
-              <Text fontWeight="bold">{startDate}</Text>
+              <Text fontWeight="bold" className="tagline">
+                Start Date:
+              </Text>
+              <Text fontWeight="bold" className="tagline">
+                {startDate}
+              </Text>
             </Flex>
             <Flex
               justifyContent="space-between"
@@ -87,13 +110,53 @@ const ProjectDetails = () => {
               borderColor="gray.100"
               p="3"
             >
-              <Text fontWeight="bold">End Date: </Text>
-              <Text fontWeight="bold">{endDate}</Text>
+              <Text fontWeight="bold" className="tagline">
+                End Date:
+              </Text>
+              <Text fontWeight="bold" className="tagline">
+                {endDate}
+              </Text>
             </Flex>
           </Flex>
 
-          {packages.length && (
-            <Text fontSize="2xl" fontWeight="black" marginTop="5">
+          <Flex className="justify-center items-center">
+            <Flex
+              justifyContent="space-evenly"
+              width="max-content"
+              borderBottom="1px"
+              borderColor="gray.100"
+              p="3"
+              marginBottom="20px"
+            >
+              <Text fontWeight="bold" className="tagline">
+                <VscGithub />
+              </Text>
+              <a
+                href={github}
+                className="hover:text-purple-400"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Text fontWeight="bold" className="tagline">
+                  Github Source Code
+                </Text>
+              </a>
+              <Text fontWeight="bold" className="tagline">
+                Leave a star!
+              </Text>
+              <Text fontWeight="bold" className="tagline">
+                <ImWink2 />
+              </Text>
+            </Flex>
+          </Flex>
+
+          {packages && (
+            <Text
+              fontSize="2xl"
+              fontWeight="black"
+              marginTop="5"
+              className="tagline"
+            >
               Packages:
             </Text>
           )}

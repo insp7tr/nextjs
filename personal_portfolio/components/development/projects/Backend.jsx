@@ -55,11 +55,7 @@ export const Backend = () => {
                 </Nav>
                 <Tab.Content id="slideInUp">
                   <Tab.Pane eventKey="one">
-                    <Row>
-                      {projects["golang"].map((project, index) => {
-                        return <ProjectCard key={index} {...project} />;
-                      })}
-                    </Row>
+                    <NotUploaded />
                   </Tab.Pane>
                   <Tab.Pane eventKey="two">
                     <NotUploaded />

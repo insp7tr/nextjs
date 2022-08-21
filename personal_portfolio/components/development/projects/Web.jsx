@@ -56,10 +56,18 @@ export const Web = () => {
                 </Nav>
                 <Tab.Content id="slideInUp">
                   <Tab.Pane eventKey="one">
-                    <NotUploaded />
+                    <Row>
+                      {projects["html_css_js"].map((project, index) => (
+                        <ProjectCard key={index} {...project} />
+                      ))}
+                    </Row>
                   </Tab.Pane>
                   <Tab.Pane eventKey="two">
-                    <NotUploaded />
+                    <Row>
+                      {projects["react"].map((project, index) => (
+                        <ProjectCard key={index} {...project} />
+                      ))}
+                    </Row>
                   </Tab.Pane>
                   <Tab.Pane eventKey="three">
                     <Row>

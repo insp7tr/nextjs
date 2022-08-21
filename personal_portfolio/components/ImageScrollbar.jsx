@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import Image from "next/image";
-import { Box, Icon, Flex } from "@chakra-ui/react";
+import { Box, Icon, Flex, Text } from "@chakra-ui/react";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
@@ -36,25 +36,40 @@ const RightArrow = () => {
 
 const ImageScrollbar = ({ data }) => {
   return (
-    <ScrollMenu
-      LeftArrow={LeftArrow}
-      RightArrow={RightArrow}
-      style={{ overflow: "hidden" }}
-    >
-      {data.map((image, i) => (
-        <Box key={i} width="910px" itemID={i} overflow="hidden" p="1">
-          <Image
-            placeholder="blur"
-            blurDataURL={image}
-            src={image}
-            width={1000}
-            height={500}
-            sizes="(max-width:500px) 100px, (max-width:1023px) 400px, 1000px"
-            alt="property"
-          />
-        </Box>
-      ))}
-    </ScrollMenu>
+    <>
+      <ScrollMenu
+        LeftArrow={LeftArrow}
+        RightArrow={RightArrow}
+        style={{ overflow: "hidden" }}
+      >
+        {data.map((image) => (
+          <>
+            <Box
+              key={image.imageId}
+              width="910px"
+              itemID={image.imageId}
+              overflow="hidden"
+              p="1"
+            >
+              <Image
+                placeholder="blur"
+                blurDataURL={image.imageUrl}
+                src={image.imageUrl}
+                width={1000}
+                height={600}
+                sizes="(max-width:500px) 100px, (max-width:1023px) 400px, 1000px"
+                alt="property"
+              />
+            </Box>
+            <Flex className="justify-center items-center">
+              <Text className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-tl from-blue-400 to-yellow-200 mt-2 p-3">
+                {image.imageTitle}
+              </Text>
+            </Flex>
+          </>
+        ))}
+      </ScrollMenu>
+    </>
   );
 };
 
