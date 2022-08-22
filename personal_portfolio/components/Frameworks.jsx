@@ -45,7 +45,9 @@ const Frameworks = () => {
           <div className="col-12">
             <div className="bg-tertiary-dark-bg rounded-3xl text-center py-16 px-12 -mt-16">
               <h5>What Skills I Have</h5>
-              <h2 className="mb-5">Languages and Frameworks</h2>
+              <h2 className="mb-5 text-4xl sm:text-5xl">
+                Languages and Frameworks
+              </h2>
               <Carousel
                 responsive={responsive}
                 infinite={true}

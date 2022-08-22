@@ -23,7 +23,7 @@ export const Web = () => {
                 Select a language to see its relevant projects.
               </p>
 
-              <Tab.Container id="web-tabs" defaultActiveKey="first">
+              <Tab.Container id="web-tabs" defaultActiveKey="one">
                 <Nav
                   variant="pills"
                   className="bg-[#ffffff1a] overflow-hidden w-9/12 my-0 mx-auto rounded-2xl mb-5 justify-center items-center"
@@ -53,6 +53,14 @@ export const Web = () => {
                       NextJS
                     </Nav.Link>
                   </Nav.Item>
+                  <Nav.Item className="w-full">
+                    <Nav.Link
+                      eventKey="four"
+                      className="bg-transparent rounded-t-3xl py-3 px-0 text-white w-full text-base tracking-wider font-medium relative transition text-center z-0"
+                    >
+                      ASP.NET
+                    </Nav.Link>
+                  </Nav.Item>
                 </Nav>
                 <Tab.Content id="slideInUp">
                   <Tab.Pane eventKey="one">
@@ -77,6 +85,15 @@ export const Web = () => {
                     <Row>
                       {projects?.map((project, index) => {
                         if (project?.project === "nextjs") {
+                          return <ProjectCard key={index} {...project} />;
+                        }
+                      })}
+                    </Row>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="four">
+                    <Row>
+                      {projects?.map((project, index) => {
+                        if (project?.project === "aspnet") {
                           return <ProjectCard key={index} {...project} />;
                         }
                       })}

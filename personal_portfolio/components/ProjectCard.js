@@ -19,7 +19,7 @@ export const ProjectCard = ({
 }) => {
   return (
     <Link href={`/project/${projectId - 1}`}>
-      <Col size={12} sm={6} md={4}>
+      <Col xs={12} sm={12} md={6} lg={4} className="mb-3">
         <div className="proj-imgbx w-full h-64">
           <Image src={bannerImgUrl} layout="fill" alt="" />
         </div>

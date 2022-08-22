@@ -276,132 +276,6 @@ p.danger {
 }
 
 /************ Projects Css ************/
-/* .project {
-  padding: 80px 0;
-  position: relative;
-  background-color: black;
-}
-.project h2 {
-  font-size: 45px;
-  font-weight: 700;
-  text-align: center;
-}
-.project p {
-  color: #b8b8b8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 14px auto 30px auto;
-  text-align: center;
-  width: 56%;
-}
-.project .nav.nav-pills {
-  width: 72%;
-  margin: 0 auto;
-  border-radius: 20px;
-  background-color: #ffffff1a;
-  overflow: hidden;
-}
-.project .nav.nav-pills .nav-item {
-  width: 33.33333%;
-}
-.project .nav.nav-pills .nav-link {
-  background-color: transparent;
-  border-radius: 0;
-  padding: 17px 0;
-  color: #fff;
-  width: 100%;
-  font-size: 17px;
-  letter-spacing: 0.8px;
-  font-weight: 500;
-  position: relative;
-  transition: 0.3s ease-in-out;
-  text-align: center;
-  z-index: 0;
-}
-.project .nav.nav-pills .nav-link::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 100%;
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: 0.3s ease-in-out;
-}
-.project .nav.nav-pills .nav-link.active::before {
-  width: 100% !important;
-}
-.project .nav.nav-pills .nav-link.active {
-  border: 1px solid rgba(255, 255, 255, 1);
-}
-.nav-link#projects-tabs-tab-one {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px 0px 0px 0px;
-}
-.nav-link#projects-tabs-tab-one::before {
-  border-radius: 19px 0px 0px 0px;
-}
-.nav-link#projects-tabs-tab-two {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-three {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 0 20px 0px 0;
-}
-.nav-link#projects-tabs-tab-three::before {
-  border-radius: 0 19px 0px 0;
-}
-.nav-link#projects-tabs-tab-four {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-five {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-six {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-seven {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-eight {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-nine {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-ten {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-eleven {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-twelve {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-thirteen {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 0px 0px 0px 20px;
-}
-.nav-link#projects-tabs-tab-thirteen::before {
-  border-radius: 0px 0px 0px 19px;
-}
-.nav-link#projects-tabs-tab-fourteen {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-fifteen {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 0 0px 20px 0;
-}
-.nav-link#projects-tabs-tab-fifteen::before {
-  border-radius: 0 0px 19px 0;
-} */
 .proj-imgbx {
   position: relative;
   border-radius: 10px;
@@ -428,16 +302,8 @@ p.danger {
   font-size: 15px;
   letter-spacing: 0.8px;
 }
-.background-image-right {
-  top: 20%;
-  position: absolute;
-  bottom: 0;
-  width: 35%;
-  right: 0;
-  z-index: -4;
-}
 
-/************ Projects Css ************/
+/************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
   padding: 60px 0 200px 0;
@@ -930,32 +796,44 @@ p.danger {
 }
 .nav-link#web-tabs-tab-two {
   border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 0px 0px 0px;
 }
 .nav-link#web-tabs-tab-three {
   border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 0px 0px 0px;
+}
+.nav-link#web-tabs-tab-four {
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 0px 20px 20px;
 }
-.nav-link#web-tabs-tab-three::before {
+.nav-link#web-tabs-tab-four::before {
   border-radius: 0 0px 19px 19px;
 }
 
 @media (min-width: 640px) {
   .nav-link#web-tabs-tab-one {
     border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 20px 0px 0px 0px;
   }
   .nav-link#web-tabs-tab-one::before {
-    border-radius: 19px 0px 0px 19px;
+    border-radius: 19px 0px 0px 0px;
   }
   .nav-link#web-tabs-tab-two {
     border: 1px solid rgba(255, 255, 255, 0.5);
   }
   .nav-link#web-tabs-tab-three {
     border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 20px 0px 0;
   }
   .nav-link#web-tabs-tab-three::before {
-    border-radius: 0 19px 19px 0;
+    border-radius: 0 19px 0px 0;
+  }
+  .nav-link#web-tabs-tab-four {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0 0px 20px 20px;
+  }
+  .nav-link#web-tabs-tab-four::before {
+    border-radius: 0 0px 19px 19px;
   }
 }
 

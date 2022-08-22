@@ -655,6 +655,45 @@ const projects = [
     completed: true,
     github: "https://github.com/insp7tr/reactjs/tree/main/personal_portfolio_2",
   },
+  {
+    projectId: 11,
+    project: "aspnet",
+    title: "Inventory Management System",
+    description:
+      "Inventory management software is a software system for tracking inventory levels, orders, sales and deliveries. It can also be used in the manufacturing industry to create a work order, bill of materials and other production-related documents. Companies use inventory management software to avoid product overstock and outages.",
+    bannerImgUrl: "",
+    bannerType: "",
+    images: [
+      {
+        imageId: 1,
+        imageUrl: "",
+        imageTitle: "No Images Uploaded as yet",
+      },
+    ],
+    features: [
+      "Authentication and Authorization with ASP.NET Core Identity",
+      "Sell a product.",
+      "Produce products using inventories.",
+      "View inventory transactions report.",
+      "View product transactions report.",
+      "Print inventory and product reports.",
+      "CRUD (Create, Read, Update and Delete) Operations for inventories.",
+      "CRUD (Create, Read, Update and Delete) operations for products.",
+      "Validations and Error handling.",
+      "SQL Server Database.",
+    ],
+    packages: [
+      "ASP.NET Core Blazor",
+      "ASP.NET Core Identity",
+      "EF Core",
+      "SQL Server",
+    ],
+    startDate: "08-02-2022",
+    endDate: "Not Completed",
+    completed: false,
+    github:
+      "https://github.com/insp7tr/asp-net/tree/main/Inventory%20Management%20System",
+  },
 ];
 
 export default projects;

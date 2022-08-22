@@ -1,10 +1,8 @@
-import { useRouter } from "next/router";
 import React from "react";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import { VscGithub } from "react-icons/vsc";
 import { ImWink2 } from "react-icons/im";
 import Link from "next/link";
-import { fetchApi, baseUrl } from "../../utils/fetchApi";
 
 import projectsData from "../../utils/data";
 import ImageScrollbar from "../../components/ImageScrollbar";
