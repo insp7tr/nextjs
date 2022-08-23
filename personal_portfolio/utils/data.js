@@ -694,6 +694,91 @@ const projects = [
     github:
       "https://github.com/insp7tr/asp-net/tree/main/Inventory%20Management%20System",
   },
+  {
+    projectId: 12,
+    project: "aspnetback",
+    title: "REST API",
+    description:
+      "REST API (Representational State Transfer) is an architectural style that defines a set of constraints to be used for creating web services. REST API is a way of accessing web services in a simple and flexible way without having any processing.",
+    bannerImgUrl: "",
+    bannerType: "",
+    images: [
+      {
+        imageId: 1,
+        imageUrl: "",
+        imageTitle: "No Images Uploaded as yet",
+      },
+    ],
+    features: ["CRUD REST API.", "Domain-Driven Design"],
+    packages: [""],
+    startDate: "22-04-2022",
+    endDate: "Not Completed",
+    completed: false,
+    github:
+      "https://github.com/insp7tr/asp-net-backend/tree/main/BuberBreakfast_REST_API",
+  },
+  {
+    projectId: 13,
+    project: "react-native",
+    title: "Uber Clone",
+    description:
+      "Uber is a transportation company with an app that allows passengers to hail a ride and drivers to charge fares and get paid. More specifically, Uber is a ridesharing company that hires independent contractors as drivers.",
+    bannerImgUrl: "/assets/img/projects/react-native/uber_clone/home.png",
+    bannerType: "Frontend",
+    images: [
+      {
+        imageId: 1,
+        imageUrl: "/assets/img/projects/react-native/uber_clone/home.png",
+        imageTitle: "Home Screen",
+      },
+      {
+        imageId: 2,
+        imageUrl:
+          "/assets/img/projects/react-native/uber_clone/from-screen.png",
+        imageTitle: "Select Origin Screen",
+      },
+      {
+        imageId: 3,
+        imageUrl:
+          "/assets/img/projects/react-native/uber_clone/pricing-screen.png",
+        imageTitle: "Select Pricing Screen",
+      },
+    ],
+    features: [
+      "ReduxJS State Management.",
+      "Uses the Google Distance Matrix API to calculate Travel time, Distance and Cost.",
+      "Uses the Directions Google API for real navigation.",
+      "Uses Google places API for real navigations.",
+      "Uses apple & google maps for iOS & Android.",
+    ],
+    packages: [
+      "@babel/core",
+      "@react-native-community/masked-view",
+      "@react-navigation/native",
+      "@react-navigation/stack",
+      "@reduxjs/toolkit",
+      "expo",
+      "expo-status-bar",
+      "react",
+      "react-native",
+      "react-native-dotenv",
+      "react-native-elements",
+      "react-native-gesture-handler",
+      "react-native-google-places-autocomplete",
+      "react-native-maps",
+      "react-native-maps-directions",
+      "react-native-reanimated",
+      "react-native-safe-area-context",
+      "react-native-screens",
+      "react-native-vector-icons",
+      "react-redux",
+      "tailwind-react-native-classnames",
+    ],
+    startDate: "22-04-2022",
+    endDate: "15-05-2022",
+    completed: true,
+    github: "https://github.com/insp7tr/react-native/tree/main/uber_clone",
+  },
 ];
 
 export default projects;

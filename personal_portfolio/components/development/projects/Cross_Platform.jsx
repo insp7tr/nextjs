@@ -32,12 +32,20 @@ export const CrossPlatform = () => {
                   className="bg-[#ffffff1a] overflow-hidden w-9/12 my-0 mx-auto rounded-2xl mb-5 justify-center items-center"
                   id="pills-tab"
                 >
-                  <Nav.Item className="w-full">
+                  <Nav.Item className="w-1/2">
                     <Nav.Link
                       eventKey="one"
                       className="bg-transparent rounded-t-3xl py-3 px-0 text-white w-full text-base tracking-wider font-medium relative transition text-center z-0"
                     >
                       Flutter
+                    </Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item className="w-1/2">
+                    <Nav.Link
+                      eventKey="two"
+                      className="bg-transparent rounded-t-3xl py-3 px-0 text-white w-full text-base tracking-wider font-medium relative transition text-center z-0"
+                    >
+                      React-Native
                     </Nav.Link>
                   </Nav.Item>
                 </Nav>
@@ -46,6 +54,15 @@ export const CrossPlatform = () => {
                     <Row>
                       {projects?.map((project, index) => {
                         if (project?.project === "flutter") {
+                          return <ProjectCard key={index} {...project} />;
+                        }
+                      })}
+                    </Row>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="two">
+                    <Row>
+                      {projects?.map((project, index) => {
+                        if (project?.project === "react-native") {
                           return <ProjectCard key={index} {...project} />;
                         }
                       })}

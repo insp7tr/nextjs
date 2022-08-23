@@ -52,6 +52,14 @@ export const Backend = () => {
                       NodeJS+NestJS
                     </Nav.Link>
                   </Nav.Item>
+                  <Nav.Item className="w-full">
+                    <Nav.Link
+                      eventKey="four"
+                      className="bg-transparent rounded-none py-3 px-0 text-white w-full text-base tracking-wider font-medium relative transition text-center z-0"
+                    >
+                      ASP.NET
+                    </Nav.Link>
+                  </Nav.Item>
                 </Nav>
                 <Tab.Content id="slideInUp">
                   <Tab.Pane eventKey="one">
@@ -62,6 +70,15 @@ export const Backend = () => {
                   </Tab.Pane>
                   <Tab.Pane eventKey="three">
                     <NotUploaded />
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="four">
+                    <Row>
+                      {projects?.map((project, index) => {
+                        if (project?.project === "aspnetback") {
+                          return <ProjectCard key={index} {...project} />;
+                        }
+                      })}
+                    </Row>
                   </Tab.Pane>
                 </Tab.Content>
               </Tab.Container>

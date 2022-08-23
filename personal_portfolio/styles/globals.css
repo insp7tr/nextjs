@@ -588,24 +588,28 @@ p.danger {
 }
 .nav-link#backend-tabs-tab-one {
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 20px 20px 0px 0px;
 }
 .nav-link#backend-tabs-tab-one::before {
-  border-radius: 19px 0px 0px 19px;
+  border-radius: 19px 19px 0px 0px;
 }
 .nav-link#backend-tabs-tab-two {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 0px 0px 0px;
 }
 .nav-link#backend-tabs-tab-three {
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 0px 0px 0px;
 }
-.nav-link#backend-tabs-tab-three::before {
-  border-radius: 0 19px 19px 0;
+.nav-link#backend-tabs-tab-four {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 0px 20px 20px;
+}
+.nav-link#backend-tabs-tab-four::before {
+  border-radius: 0 0px 19px 19px;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .nav-link#backend-tabs-tab-one {
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px 0px 0px 0px;
@@ -615,17 +619,20 @@ p.danger {
   }
   .nav-link#backend-tabs-tab-two {
     border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 0 20px 0 0;
-  }
-  .nav-link#backend-tabs-tab-two::before {
-    border-radius: 0 19px 0px 0;
   }
   .nav-link#backend-tabs-tab-three {
     border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 20px 0px 0;
   }
   .nav-link#backend-tabs-tab-three::before {
-    border-radius: 0 0 19px 19px;
+    border-radius: 0 19px 0px 0;
+  }
+  .nav-link#backend-tabs-tab-four {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0 0px 20px 20px;
+  }
+  .nav-link#backend-tabs-tab-four::before {
+    border-radius: 0 0px 19px 19px;
   }
 }
 
@@ -690,10 +697,17 @@ p.danger {
 }
 .nav-link#cross_platform-tabs-tab-one {
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 0px 0px 20px;
 }
 .nav-link#cross_platform-tabs-tab-one::before {
-  border-radius: 19px 19px 19px 19px;
+  border-radius: 19px 0px 0px 19px;
+}
+.nav-link#cross_platform-tabs-tab-two {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0px 20px 20px 0px;
+}
+.nav-link#cross_platform-tabs-tab-two::before {
+  border-radius: 0px 19px 19px 0px;
 }
 
 /* DESKTOP CSS */
