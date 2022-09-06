@@ -53,7 +53,7 @@ export const CrossPlatform = () => {
                   <Tab.Pane eventKey="one">
                     <Row>
                       {projects?.map((project, index) => {
-                        if (project?.project === "flutter") {
+                        if (project?.project === "Flutter") {
                           return <ProjectCard key={index} {...project} />;
                         }
                       })}
@@ -62,7 +62,7 @@ export const CrossPlatform = () => {
                   <Tab.Pane eventKey="two">
                     <Row>
                       {projects?.map((project, index) => {
-                        if (project?.project === "react-native") {
+                        if (project?.project === "React-Native") {
                           return <ProjectCard key={index} {...project} />;
                         }
                       })}

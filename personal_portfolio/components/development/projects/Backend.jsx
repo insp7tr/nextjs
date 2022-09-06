@@ -28,7 +28,7 @@ export const Backend = () => {
                   className="bg-[#ffffff1a] overflow-hidden w-9/12 my-0 mx-auto rounded-2xl mb-5 justify-center items-center"
                   id="pills-tab"
                 >
-                  <Nav.Item className="w-1/2 sm:w-1/3">
+                  <Nav.Item className="w-full sm:w-1/2">
                     <Nav.Link
                       eventKey="one"
                       className="bg-transparent rounded-t-3xl py-3 px-0 text-white w-full text-base tracking-wider font-medium relative transition text-center z-0"
@@ -36,7 +36,7 @@ export const Backend = () => {
                       GoLang
                     </Nav.Link>
                   </Nav.Item>
-                  <Nav.Item className="w-1/2 sm:w-1/3">
+                  <Nav.Item className="w-full sm:w-1/2">
                     <Nav.Link
                       eventKey="two"
                       className="bg-transparent rounded-none py-3 px-0 text-white w-full text-base tracking-wider font-medium relative transition text-center z-0"
@@ -44,7 +44,7 @@ export const Backend = () => {
                       NodeJS
                     </Nav.Link>
                   </Nav.Item>
-                  <Nav.Item className="w-full sm:w-1/3">
+                  <Nav.Item className="w-full sm:w-1/2">
                     <Nav.Link
                       eventKey="three"
                       className="bg-transparent rounded-none py-3 px-0 text-white w-full text-base tracking-wider font-medium relative transition text-center z-0"
@@ -52,7 +52,7 @@ export const Backend = () => {
                       NodeJS+NestJS
                     </Nav.Link>
                   </Nav.Item>
-                  <Nav.Item className="w-full">
+                  <Nav.Item className="w-full sm:w-1/2">
                     <Nav.Link
                       eventKey="four"
                       className="bg-transparent rounded-none py-3 px-0 text-white w-full text-base tracking-wider font-medium relative transition text-center z-0"
@@ -74,7 +74,7 @@ export const Backend = () => {
                   <Tab.Pane eventKey="four">
                     <Row>
                       {projects?.map((project, index) => {
-                        if (project?.project === "aspnetback") {
+                        if (project?.project === "ASP.NET-BACK") {
                           return <ProjectCard key={index} {...project} />;
                         }
                       })}

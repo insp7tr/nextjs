@@ -16,9 +16,11 @@ const ProjectDetails = ({
     description,
     bannerImgUrl,
     bannerType,
+    backendLang,
     images,
     features,
     packages,
+    backendPackages,
     startDate,
     endDate,
     completed,
@@ -154,11 +156,37 @@ const ProjectDetails = ({
               marginTop="5"
               className="tagline"
             >
-              Packages:
+              {project} Packages:
             </Text>
           )}
           <Flex flexWrap="wrap">
             {packages?.map((amenity) => (
+              <Text
+                key={amenity}
+                fontWeight="bold"
+                color="white"
+                fontSize="l"
+                p="2"
+                bg="purple.600"
+                m="1"
+                borderRadius="5"
+              >
+                {amenity}
+              </Text>
+            ))}
+          </Flex>
+          {backendPackages && (
+            <Text
+              fontSize="2xl"
+              fontWeight="black"
+              marginTop="5"
+              className="tagline"
+            >
+              {backendLang} Packages:
+            </Text>
+          )}
+          <Flex flexWrap="wrap">
+            {backendPackages?.map((amenity) => (
               <Text
                 key={amenity}
                 fontWeight="bold"

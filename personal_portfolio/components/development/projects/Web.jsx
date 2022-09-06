@@ -53,7 +53,7 @@ export const Web = () => {
                       NextJS
                     </Nav.Link>
                   </Nav.Item>
-                  <Nav.Item className="w-full">
+                  <Nav.Item className="w-full sm:w-1/2">
                     <Nav.Link
                       eventKey="four"
                       className="bg-transparent rounded-t-3xl py-3 px-0 text-white w-full text-base tracking-wider font-medium relative transition text-center z-0"
@@ -61,12 +61,20 @@ export const Web = () => {
                       ASP.NET
                     </Nav.Link>
                   </Nav.Item>
+                  <Nav.Item className="w-full sm:w-1/2">
+                    <Nav.Link
+                      eventKey="five"
+                      className="bg-transparent rounded-t-3xl py-3 px-0 text-white w-full text-base tracking-wider font-medium relative transition text-center z-0"
+                    >
+                      VueJS
+                    </Nav.Link>
+                  </Nav.Item>
                 </Nav>
                 <Tab.Content id="slideInUp">
                   <Tab.Pane eventKey="one">
                     <Row>
                       {projects?.map((project, index) => {
-                        if (project?.project === "html_css_js") {
+                        if (project?.project === "HTML/CSS/JS") {
                           return <ProjectCard key={index} {...project} />;
                         }
                       })}
@@ -75,7 +83,7 @@ export const Web = () => {
                   <Tab.Pane eventKey="two">
                     <Row>
                       {projects?.map((project, index) => {
-                        if (project?.project === "react") {
+                        if (project?.project === "React.js") {
                           return <ProjectCard key={index} {...project} />;
                         }
                       })}
@@ -84,7 +92,7 @@ export const Web = () => {
                   <Tab.Pane eventKey="three">
                     <Row>
                       {projects?.map((project, index) => {
-                        if (project?.project === "nextjs") {
+                        if (project?.project === "Next.js") {
                           return <ProjectCard key={index} {...project} />;
                         }
                       })}
@@ -93,7 +101,16 @@ export const Web = () => {
                   <Tab.Pane eventKey="four">
                     <Row>
                       {projects?.map((project, index) => {
-                        if (project?.project === "aspnet") {
+                        if (project?.project === "ASP.NET") {
+                          return <ProjectCard key={index} {...project} />;
+                        }
+                      })}
+                    </Row>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="five">
+                    <Row>
+                      {projects?.map((project, index) => {
+                        if (project?.project === "Vue.js") {
                           return <ProjectCard key={index} {...project} />;
                         }
                       })}

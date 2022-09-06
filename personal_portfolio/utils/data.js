@@ -5,6 +5,7 @@ const template = {
   description: "",
   bannerImgUrl: "",
   bannerType: "",
+  backendLang: "",
   images: [
     {
       imageId: 1,
@@ -12,8 +13,9 @@ const template = {
       imageTitle: "",
     },
   ],
-  features: ["", "", ""],
-  packages: ["", "", ""],
+  features: [],
+  packages: [],
+  backendPackages: [],
   startDate: "",
   endDate: "",
   completed: false,
@@ -23,13 +25,14 @@ const template = {
 const projects = [
   {
     projectId: 1,
-    project: "flutter",
+    project: "Flutter",
     title: "Amazon Ecommerce Clone",
     description:
       "A full stack e-commerce app with Flutter, Javascript, Node.js, Express, MongoDB and Mongoose.",
     bannerImgUrl:
       "/assets/img/projects/flutter/flutter_amazon_clone/user-home.png",
-    bannerType: "full-stack-project",
+    bannerType: "Full-Stack",
+    backendLang: "Node.js",
     images: [
       {
         imageId: 1,
@@ -155,6 +158,13 @@ const projects = [
       "intl",
       "charts_flutter",
     ],
+    backendPackages: [
+      "bcryptjs",
+      "express",
+      "http",
+      "jsonwebtoken",
+      "mongoose",
+    ],
     startDate: "17-07-2022",
     endDate: "30-07-2022",
     completed: true,
@@ -162,7 +172,7 @@ const projects = [
   },
   {
     projectId: 2,
-    project: "nextjs",
+    project: "Next.js",
     title: "Ecommerce Website",
     description:
       "A website that allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location. Through an e-commerce website, a business can process orders, accept payments, manage shipping and logistics, and provide customer service. Get your business online.",
@@ -228,7 +238,7 @@ const projects = [
   },
   {
     projectId: 3,
-    project: "nextjs",
+    project: "Next.js",
     title: "Real Estate Website",
     description:
       "An amazing Real Estate Application. With rental homes and for-sale properties, advanced property filtering, property details page with an image carousel, and much more.",
@@ -285,7 +295,7 @@ const projects = [
   },
   {
     projectId: 4,
-    project: "nextjs",
+    project: "Next.js",
     title: "Personal Portfolio",
     description:
       "My third take on a personal portfolio website. Portfolios are used by working professionals, companies and students to highlight their best work and display accomplishments, skills and potential. They visually showcase examples of work.",
@@ -368,7 +378,7 @@ const projects = [
   },
   {
     projectId: 5,
-    project: "html_css_js",
+    project: "HTML/CSS/JS",
     title: "Book Analyzer",
     description:
       "A simple book analyzer. Shows most used, least used and document stats.",
@@ -396,7 +406,7 @@ const projects = [
   },
   {
     projectId: 6,
-    project: "html_css_js",
+    project: "HTML/CSS/JS",
     title: "Grocery Bud",
     description: "A to-buy tracker for groceries.",
     bannerImgUrl: "/assets/img/projects/html_css_js/grocery_bud/home-2.png",
@@ -425,7 +435,7 @@ const projects = [
   },
   {
     projectId: 7,
-    project: "html_css_js",
+    project: "HTML/CSS/JS",
     title: "Online Food Menu",
     description: "Static webiste dsiplaying an online menu.",
     bannerImgUrl: "/assets/img/projects/html_css_js/online_food_menu/all.png",
@@ -469,7 +479,7 @@ const projects = [
   },
   {
     projectId: 8,
-    project: "html_css_js",
+    project: "HTML/CSS/JS",
     title: "Personal Portfolio",
     description:
       "My first take on a portfolio website. Portfolios are used by working professionals, companies and students to highlight their best work and display accomplishments, skills and potential. They visually showcase examples of work.",
@@ -539,10 +549,9 @@ const projects = [
     github:
       "https://github.com/insp7tr/html-css-js/tree/main/personal_portfolio",
   },
-
   {
     projectId: 9,
-    project: "react",
+    project: "React.js",
     title: "Meetups Page",
     description: "Meetups page for users to add meetups and get-togethers",
     bannerImgUrl: "/assets/img/projects/react/meetups_page/landing-page.png",
@@ -586,7 +595,7 @@ const projects = [
   },
   {
     projectId: 10,
-    project: "react",
+    project: "React.js",
     title: "Personal portfolio",
     description:
       "My second take on a personal portfolio website. Portfolios are used by working professionals, companies and students to highlight their best work and display accomplishments, skills and potential. They visually showcase examples of work.",
@@ -657,7 +666,7 @@ const projects = [
   },
   {
     projectId: 11,
-    project: "aspnet",
+    project: "ASP.NET",
     title: "Inventory Management System",
     description:
       "Inventory management software is a software system for tracking inventory levels, orders, sales and deliveries. It can also be used in the manufacturing industry to create a work order, bill of materials and other production-related documents. Companies use inventory management software to avoid product overstock and outages.",
@@ -696,7 +705,7 @@ const projects = [
   },
   {
     projectId: 12,
-    project: "aspnetback",
+    project: "ASP.NET-BACK",
     title: "REST API",
     description:
       "REST API (Representational State Transfer) is an architectural style that defines a set of constraints to be used for creating web services. REST API is a way of accessing web services in a simple and flexible way without having any processing.",
@@ -719,7 +728,7 @@ const projects = [
   },
   {
     projectId: 13,
-    project: "react-native",
+    project: "React-Native",
     title: "Uber Clone",
     description:
       "Uber is a transportation company with an app that allows passengers to hail a ride and drivers to charge fares and get paid. More specifically, Uber is a ridesharing company that hires independent contractors as drivers.",
@@ -778,6 +787,143 @@ const projects = [
     endDate: "15-05-2022",
     completed: true,
     github: "https://github.com/insp7tr/react-native/tree/main/uber_clone",
+  },
+  {
+    projectId: 14,
+    project: "Next.js",
+    title: "Live Chat App",
+    description:
+      "A live chat application with the T3 stack, tRPC, Tailwind & TypeScript.",
+    bannerImgUrl: "",
+    bannerType: "",
+    images: [
+      {
+        imageId: 1,
+        imageUrl: "",
+        imageTitle: "Images not uploaded as yet",
+      },
+    ],
+    features: [""],
+    packages: [""],
+    startDate: "14-06-2022",
+    endDate: "Not Completed",
+    completed: false,
+    github: "",
+  },
+  {
+    projectId: 15,
+    project: "React.js",
+    title: "Weather Application",
+    description:
+      "A weather application using the OpenWeatherMap API and GeoDB API with places autocomplete.",
+    bannerImgUrl: "/assets/img/projects/react/weather-app/detailed.png",
+    bannerType: "Frontend",
+    images: [
+      {
+        imageId: 1,
+        imageUrl: "/assets/img/projects/react/weather-app/search.png",
+        imageTitle: "Search City Screen",
+      },
+      {
+        imageId: 2,
+        imageUrl: "/assets/img/projects/react/weather-app/detailed.png",
+        imageTitle: "Full Details Screen",
+      },
+    ],
+    features: [
+      "Search city component which works with the GeoDB Cities API to feature all cities.",
+      "Fetching and mapping data from open weather API",
+      "Shows current days weather information.",
+      "Shows forecast for the next 7 days weather information.",
+    ],
+    packages: [
+      "@testing-library/jest-dom",
+      "@testing-library/react",
+      "@testing-library/user-event",
+      "react",
+      "react-accessible-accordion",
+      "react-dom",
+      "react-scripts",
+      "react-select-async-paginate",
+      "web-vitals",
+    ],
+    startDate: "14-07-2022",
+    endDate: "20-07-2022",
+    completed: true,
+    github: "https://github.com/insp7tr/react/tree/main/weather-app",
+  },
+  {
+    projectId: 16,
+    project: "React.js",
+    title: "Youtube Clone",
+    description:
+      "YouTube is an American online video sharing and social media platform.",
+    bannerImgUrl: "",
+    bannerType: "Full-Stack",
+    backendLang: "Node.js",
+    images: [
+      {
+        imageId: 1,
+        imageUrl: "",
+        imageTitle: "No images uploaded yet",
+      },
+    ],
+    features: [""],
+    packages: [""],
+    backendPackages: [""],
+    startDate: "01-07-2022",
+    endDate: "Not Completed",
+    completed: false,
+    github: "",
+  },
+  {
+    projectId: 17,
+    project: "React-Native",
+    title: "Instagram Clone",
+    description:
+      "Instagram is a photo and video sharing social networking service. The app allows users to upload media that can be edited with filters and organized by hashtags and geographical tagging.",
+    bannerImgUrl: "",
+    bannerType: "Frontend",
+    images: [
+      {
+        imageId: 1,
+        imageUrl: "",
+        imageTitle: "No images uploaded yet",
+      },
+    ],
+    features: [""],
+    packages: [""],
+    startDate: "25-08-2022",
+    endDate: "Not Completed",
+    completed: false,
+    github: "",
+  },
+  {
+    projectId: 18,
+    project: "Vue.js",
+    title: "To-Do Application",
+    description:
+      "To-Do List Application that uses LocalStorage for saving data to the browser.",
+    bannerImgUrl: "/assets/img/projects/vuejs/to-do-app/Home-1.png",
+    bannerType: "Frontend",
+    images: [
+      {
+        imageId: 1,
+        imageUrl: "/assets/img/projects/vuejs/to-do-app/Home-1.png",
+        imageTitle: "Desktop View",
+      },
+      {
+        imageId: 2,
+        imageUrl: "/assets/img/projects/vuejs/to-do-app/Home-2.png",
+        imageTitle: "Mobile View",
+      },
+    ],
+    features: ["Uses LocalStorage to persist data to the browser."],
+    packages: ["vue", "@vitejs/plugin-vue", "vite"],
+    startDate: "01-09-2022",
+    endDate: "04-09-2022",
+    completed: true,
+    github: "https://github.com/insp7tr/vuejs/tree/main/todo-app",
   },
 ];
 
