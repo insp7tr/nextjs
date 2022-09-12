@@ -49,7 +49,7 @@ export const Backend = () => {
                       eventKey="three"
                       className="bg-transparent rounded-none py-3 px-0 text-white w-full text-base tracking-wider font-medium relative transition text-center z-0"
                     >
-                      NodeJS+NestJS
+                      NestJS
                     </Nav.Link>
                   </Nav.Item>
                   <Nav.Item className="w-full sm:w-1/2">
@@ -66,7 +66,13 @@ export const Backend = () => {
                     <NotUploaded />
                   </Tab.Pane>
                   <Tab.Pane eventKey="two">
-                    <NotUploaded />
+                    <Row>
+                      {projects?.map((project, index) => {
+                        if (project?.languages[1] === "Node.js") {
+                          return <ProjectCard key={index} {...project} />;
+                        }
+                      })}
+                    </Row>
                   </Tab.Pane>
                   <Tab.Pane eventKey="three">
                     <NotUploaded />
@@ -74,7 +80,7 @@ export const Backend = () => {
                   <Tab.Pane eventKey="four">
                     <Row>
                       {projects?.map((project, index) => {
-                        if (project?.project === "ASP.NET-BACK") {
+                        if (project?.languages[1] === "ASP.NET-BACK") {
                           return <ProjectCard key={index} {...project} />;
                         }
                       })}

@@ -1,11 +1,10 @@
 const template = {
   projectId: 1,
-  project: "",
+  languages: [],
   title: "",
   description: "",
   bannerImgUrl: "",
-  bannerType: "",
-  backendLang: "",
+  type: "",
   images: [
     {
       imageId: 1,
@@ -25,14 +24,13 @@ const template = {
 const projects = [
   {
     projectId: 1,
-    project: "Flutter",
+    languages: ["Flutter", "Node.js"],
     title: "Amazon Ecommerce Clone",
     description:
       "A full stack e-commerce app with Flutter, Javascript, Node.js, Express, MongoDB and Mongoose.",
     bannerImgUrl:
       "/assets/img/projects/flutter/flutter_amazon_clone/user-home.png",
-    bannerType: "Full-Stack",
-    backendLang: "Node.js",
+    type: "Full-Stack",
     images: [
       {
         imageId: 1,
@@ -172,12 +170,12 @@ const projects = [
   },
   {
     projectId: 2,
-    project: "Next.js",
+    languages: ["Next.js", ""],
     title: "Ecommerce Website",
     description:
       "A website that allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location. Through an e-commerce website, a business can process orders, accept payments, manage shipping and logistics, and provide customer service. Get your business online.",
     bannerImgUrl: "/assets/img/projects/nextjs/nextjs_ecommerce/home-1.png",
-    bannerType: "Frontend",
+    type: "Frontend",
     images: [
       {
         imageId: 1,
@@ -238,12 +236,12 @@ const projects = [
   },
   {
     projectId: 3,
-    project: "Next.js",
+    languages: ["Next.js", ""],
     title: "Real Estate Website",
     description:
       "An amazing Real Estate Application. With rental homes and for-sale properties, advanced property filtering, property details page with an image carousel, and much more.",
     bannerImgUrl: "/assets/img/projects/nextjs/real_estate_app/home-1.png",
-    bannerType: "Frontend",
+    type: "Frontend",
     images: [
       {
         imageId: 1,
@@ -295,13 +293,13 @@ const projects = [
   },
   {
     projectId: 4,
-    project: "Next.js",
+    languages: ["Next.js", ""],
     title: "Personal Portfolio",
     description:
       "My third take on a personal portfolio website. Portfolios are used by working professionals, companies and students to highlight their best work and display accomplishments, skills and potential. They visually showcase examples of work.",
     bannerImgUrl:
       "/assets/img/projects/nextjs/personal_portfolio/landing-page.png",
-    bannerType: "Frontend",
+    type: "Frontend",
     images: [
       {
         imageId: 1,
@@ -378,12 +376,12 @@ const projects = [
   },
   {
     projectId: 5,
-    project: "HTML/CSS/JS",
+    languages: ["HTML/CSS/JS", ""],
     title: "Book Analyzer",
     description:
       "A simple book analyzer. Shows most used, least used and document stats.",
     bannerImgUrl: "/assets/img/projects/html_css_js/book_analyzer/home.png",
-    bannerType: "Frontend",
+    type: "Frontend",
     images: [
       {
         imageId: 1,
@@ -406,11 +404,11 @@ const projects = [
   },
   {
     projectId: 6,
-    project: "HTML/CSS/JS",
+    languages: ["HTML/CSS/JS", ""],
     title: "Grocery Bud",
     description: "A to-buy tracker for groceries.",
     bannerImgUrl: "/assets/img/projects/html_css_js/grocery_bud/home-2.png",
-    bannerType: "Frontend",
+    type: "Frontend",
     images: [
       {
         imageId: 1,
@@ -435,11 +433,11 @@ const projects = [
   },
   {
     projectId: 7,
-    project: "HTML/CSS/JS",
+    languages: ["HTML/CSS/JS", ""],
     title: "Online Food Menu",
     description: "Static webiste dsiplaying an online menu.",
     bannerImgUrl: "/assets/img/projects/html_css_js/online_food_menu/all.png",
-    bannerType: "Frontend",
+    type: "Frontend",
     images: [
       {
         imageId: 1,
@@ -479,13 +477,13 @@ const projects = [
   },
   {
     projectId: 8,
-    project: "HTML/CSS/JS",
+    languages: ["HTML/CSS/JS", ""],
     title: "Personal Portfolio",
     description:
       "My first take on a portfolio website. Portfolios are used by working professionals, companies and students to highlight their best work and display accomplishments, skills and potential. They visually showcase examples of work.",
     bannerImgUrl:
       "/assets/img/projects/html_css_js/personal_portfolio/landing-page.png",
-    bannerType: "Frontend",
+    type: "Frontend",
     images: [
       {
         imageId: 1,
@@ -551,11 +549,11 @@ const projects = [
   },
   {
     projectId: 9,
-    project: "React.js",
+    languages: ["React.js", ""],
     title: "Meetups Page",
     description: "Meetups page for users to add meetups and get-togethers",
     bannerImgUrl: "/assets/img/projects/react/meetups_page/landing-page.png",
-    bannerType: "Frontend",
+    type: "Frontend",
     images: [
       {
         imageId: 1,
@@ -595,13 +593,13 @@ const projects = [
   },
   {
     projectId: 10,
-    project: "React.js",
+    languages: ["React.js", ""],
     title: "Personal portfolio",
     description:
       "My second take on a personal portfolio website. Portfolios are used by working professionals, companies and students to highlight their best work and display accomplishments, skills and potential. They visually showcase examples of work.",
     bannerImgUrl:
       "/assets/img/projects/react/personal_portfolio/landing-page.png",
-    bannerType: "Frontend",
+    type: "Frontend",
     images: [
       {
         imageId: 1,
@@ -666,12 +664,12 @@ const projects = [
   },
   {
     projectId: 11,
-    project: "ASP.NET",
+    languages: ["ASP.NET", ""],
     title: "Inventory Management System",
     description:
       "Inventory management software is a software system for tracking inventory levels, orders, sales and deliveries. It can also be used in the manufacturing industry to create a work order, bill of materials and other production-related documents. Companies use inventory management software to avoid product overstock and outages.",
     bannerImgUrl: "",
-    bannerType: "",
+    type: "Frontend",
     images: [
       {
         imageId: 1,
@@ -705,12 +703,12 @@ const projects = [
   },
   {
     projectId: 12,
-    project: "ASP.NET-BACK",
+    languages: ["", "ASP.NET-BACK"],
     title: "REST API",
     description:
       "REST API (Representational State Transfer) is an architectural style that defines a set of constraints to be used for creating web services. REST API is a way of accessing web services in a simple and flexible way without having any processing.",
     bannerImgUrl: "",
-    bannerType: "",
+    type: "Backend",
     images: [
       {
         imageId: 1,
@@ -728,12 +726,12 @@ const projects = [
   },
   {
     projectId: 13,
-    project: "React-Native",
+    languages: ["React-Native", ""],
     title: "Uber Clone",
     description:
       "Uber is a transportation company with an app that allows passengers to hail a ride and drivers to charge fares and get paid. More specifically, Uber is a ridesharing company that hires independent contractors as drivers.",
     bannerImgUrl: "/assets/img/projects/react-native/uber_clone/home.png",
-    bannerType: "Frontend",
+    type: "Frontend",
     images: [
       {
         imageId: 1,
@@ -790,12 +788,12 @@ const projects = [
   },
   {
     projectId: 14,
-    project: "Next.js",
+    languages: ["Next.js", ""],
     title: "Live Chat App",
     description:
       "A live chat application with the T3 stack, tRPC, Tailwind & TypeScript.",
     bannerImgUrl: "",
-    bannerType: "",
+    type: "Frontend",
     images: [
       {
         imageId: 1,
@@ -812,12 +810,12 @@ const projects = [
   },
   {
     projectId: 15,
-    project: "React.js",
+    languages: ["React.js", ""],
     title: "Weather Application",
     description:
       "A weather application using the OpenWeatherMap API and GeoDB API with places autocomplete.",
     bannerImgUrl: "/assets/img/projects/react/weather-app/detailed.png",
-    bannerType: "Frontend",
+    type: "Frontend",
     images: [
       {
         imageId: 1,
@@ -854,13 +852,12 @@ const projects = [
   },
   {
     projectId: 16,
-    project: "React.js",
+    languages: ["React.js", "Node.js"],
     title: "Youtube Clone",
     description:
       "YouTube is an American online video sharing and social media platform.",
     bannerImgUrl: "",
-    bannerType: "Full-Stack",
-    backendLang: "Node.js",
+    type: "Full-Stack",
     images: [
       {
         imageId: 1,
@@ -878,12 +875,12 @@ const projects = [
   },
   {
     projectId: 17,
-    project: "React-Native",
+    languages: ["React-Native", ""],
     title: "Instagram Clone",
     description:
       "Instagram is a photo and video sharing social networking service. The app allows users to upload media that can be edited with filters and organized by hashtags and geographical tagging.",
     bannerImgUrl: "",
-    bannerType: "Frontend",
+    type: "Frontend",
     images: [
       {
         imageId: 1,
@@ -900,12 +897,12 @@ const projects = [
   },
   {
     projectId: 18,
-    project: "Vue.js",
+    languages: ["Vue.js", ""],
     title: "To-Do Application",
     description:
       "To-Do List Application that uses LocalStorage for saving data to the browser.",
     bannerImgUrl: "/assets/img/projects/vuejs/to-do-app/Home-1.png",
-    bannerType: "Frontend",
+    type: "Frontend",
     images: [
       {
         imageId: 1,
@@ -924,6 +921,100 @@ const projects = [
     endDate: "04-09-2022",
     completed: true,
     github: "https://github.com/insp7tr/vuejs/tree/main/todo-app",
+  },
+  {
+    projectId: 19,
+    languages: ["", "ASP.NET-BACK"],
+    title: "Pokemon Review API",
+    description: "An API with CRUD operations for a pokemon database.",
+    bannerImgUrl: "",
+    type: "Backend",
+    images: [
+      {
+        imageId: 1,
+        imageUrl: "",
+        imageTitle: "Not Uploaded Yet",
+      },
+    ],
+    features: [""],
+    packages: [
+      "Microsoft.AspNetCore.App@6.0.8",
+      "Microsoft.NETCore.App@6.0.8",
+      "AutoMapper@11.0.1",
+      "AutoMapper.Exensions.Microsoft.DependencyInjection@11.0.0",
+      "Microsoft.EntityFrameworkCore.Design@6.0.8",
+      "Microsoft.EntityFrameworkCore.SqlServer@6.0.8",
+      "Swashbuckle.AspNetCore@6.2.3",
+    ],
+    startDate: "04-09-2022",
+    endDate: "11-09-2022",
+    completed: true,
+    github:
+      "https://github.com/insp7tr/asp-net-backend/tree/main/PokemonReviewApp",
+  },
+  {
+    projectId: 20,
+    languages: ["Vue.js", ""],
+    title: "IP Tracking App",
+    description:
+      "Track any user by entering their IP address or get your IP Address.",
+    bannerImgUrl: "/assets/img/projects/vuejs/ip-tracking-app/home-screen.png",
+    type: "Frontend",
+    images: [
+      {
+        imageId: 1,
+        imageUrl: "/assets/img/projects/vuejs/ip-tracking-app/home-screen.png",
+        imageTitle: "Desktop View",
+      },
+      {
+        imageId: 2,
+        imageUrl:
+          "/assets/img/projects/vuejs/ip-tracking-app/result-screen.png",
+        imageTitle: "Desktop Result View",
+      },
+      {
+        imageId: 3,
+        imageUrl:
+          "/assets/img/projects/vuejs/ip-tracking-app/mobile-home-screen.png",
+        imageTitle: "Mobile View",
+      },
+      {
+        imageId: 4,
+        imageUrl:
+          "/assets/img/projects/vuejs/ip-tracking-app/mobile-result-screen.png",
+        imageTitle: "Mobile Result View",
+      },
+    ],
+    features: [
+      "Completely functional search input.",
+      "Uses Leaflet.js, Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps.",
+      "Makes use of the Geolocation API to get accurate results.",
+    ],
+    packages: [
+      "autoprefixer@10",
+      "axios@0.27.2",
+      "core-js@3.8.3",
+      "leaflet@1.8.0",
+      "postcss@8",
+      "tailwindcss@3",
+      "vue@3.2.13",
+      "vue-router@4.0.3",
+      "@babel/core@7.12.16",
+      "@babel/eslint-parser@7.12.16",
+      "@vue/cli-plugin-babel@5.0.0",
+      "@vue/cli-plugin-eslint@5.0.0",
+      "@vue/cli-plugin-router@5.0.0",
+      "@vue/cli-service@5.0.0",
+      "eslint@7.32.0",
+      "eslint-plugin-vue@^8.0.3",
+      "sass@1.32.7",
+      "sass-loader@12.0.0",
+      "vue-cli-plugin-tailwind@3.0.0",
+    ],
+    startDate: "10-09-2022",
+    endDate: "12-09-2022",
+    completed: true,
+    github: "https://github.com/insp7tr/vuejs/tree/main/ip-tracking-app",
   },
 ];
 

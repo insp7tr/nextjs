@@ -74,7 +74,7 @@ export const Web = () => {
                   <Tab.Pane eventKey="one">
                     <Row>
                       {projects?.map((project, index) => {
-                        if (project?.project === "HTML/CSS/JS") {
+                        if (project?.languages[0] === "HTML/CSS/JS") {
                           return <ProjectCard key={index} {...project} />;
                         }
                       })}
@@ -83,7 +83,7 @@ export const Web = () => {
                   <Tab.Pane eventKey="two">
                     <Row>
                       {projects?.map((project, index) => {
-                        if (project?.project === "React.js") {
+                        if (project?.languages[0] === "React.js") {
                           return <ProjectCard key={index} {...project} />;
                         }
                       })}
@@ -92,7 +92,7 @@ export const Web = () => {
                   <Tab.Pane eventKey="three">
                     <Row>
                       {projects?.map((project, index) => {
-                        if (project?.project === "Next.js") {
+                        if (project?.languages[0] === "Next.js") {
                           return <ProjectCard key={index} {...project} />;
                         }
                       })}
@@ -101,7 +101,7 @@ export const Web = () => {
                   <Tab.Pane eventKey="four">
                     <Row>
                       {projects?.map((project, index) => {
-                        if (project?.project === "ASP.NET") {
+                        if (project?.languages[0] === "ASP.NET") {
                           return <ProjectCard key={index} {...project} />;
                         }
                       })}
@@ -110,7 +110,7 @@ export const Web = () => {
                   <Tab.Pane eventKey="five">
                     <Row>
                       {projects?.map((project, index) => {
-                        if (project?.project === "Vue.js") {
+                        if (project?.languages[0] === "Vue.js") {
                           return <ProjectCard key={index} {...project} />;
                         }
                       })}
