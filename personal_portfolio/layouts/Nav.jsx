@@ -17,18 +17,18 @@ const Nav = () => {
         <AiOutlineHome />
       </a>
       <a
-        href="#projects"
-        onClick={() => setActiveNav("#projects")}
-        className={activeNav === "#projects" ? "active" : ""}
-      >
-        <BiBook />
-      </a>
-      <a
         href="#services"
         onClick={() => setActiveNav("#services")}
         className={activeNav === "#services" ? "active" : ""}
       >
         <RiServiceLine />
+      </a>
+      <a
+        href="#projects"
+        onClick={() => setActiveNav("#projects")}
+        className={activeNav === "#projects" ? "active" : ""}
+      >
+        <BiBook />
       </a>
       <a
         href="#connect"

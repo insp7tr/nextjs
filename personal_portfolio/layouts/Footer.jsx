@@ -6,7 +6,7 @@ import { IoLogoTwitter } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <footer className="text-center text-2xl mt-10 ">
+    <footer className="text-center text-2xl bg-custom-gradient">
       <ul className="permalinks pl-0">
         <li className="text-purple-500 no-underline hover:text-purple-300">
           <a href="#" className="">

@@ -16,8 +16,8 @@ const Home = () => {
       <Nav />
       <Banner />
       <Frameworks />
-      <Development />
       <Services />
+      <Development />
       <Contact />
       <Footer />
     </div>

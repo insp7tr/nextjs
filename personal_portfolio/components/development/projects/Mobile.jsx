@@ -11,7 +11,7 @@ const NotUploaded = () => {
 
 export const Mobile = () => {
   return (
-    <section className="py-20 px-0 realtive bg-black mobile" id="projects">
+    <section className="px-0 realtive mobile" id="projects">
       <Container>
         <Row>
           <Col size={12}>

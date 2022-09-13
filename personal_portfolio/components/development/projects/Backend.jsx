@@ -12,7 +12,7 @@ const NotUploaded = () => {
 
 export const Backend = () => {
   return (
-    <section className="py-20 px-0 realtive bg-black backend" id="projects">
+    <section className="px-0 relative backend" id="projects">
       <Container>
         <Row>
           <Col size={12}>

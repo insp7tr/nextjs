@@ -3,6 +3,8 @@ logs
 *.log
 npm-debug.log*
 
+/twitter_clone
+
 .DS_Store
 
 # Runtime data

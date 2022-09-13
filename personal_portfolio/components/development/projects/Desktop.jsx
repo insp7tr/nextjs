@@ -11,7 +11,7 @@ const NotUploaded = () => {
 
 export const Desktop = () => {
   return (
-    <section className="py-20 px-0 realtive bg-black desktop" id="projects">
+    <section className="px-0 relative desktop" id="projects">
       <Container>
         <Row>
           <Col size={12}>

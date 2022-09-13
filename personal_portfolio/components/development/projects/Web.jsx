@@ -13,7 +13,7 @@ const NotUploaded = () => {
 
 export const Web = () => {
   return (
-    <section className="py-20 px-0 realtive bg-black web" id="projects">
+    <section className="px-0 relative web" id="projects">
       <Container>
         <Row>
           <Col size={12}>

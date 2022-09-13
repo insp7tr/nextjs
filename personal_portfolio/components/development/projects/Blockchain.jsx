@@ -11,7 +11,7 @@ const NotUploaded = () => {
 
 export const Blockchain = () => {
   return (
-    <section className="py-20 px-0 realtive bg-black blockchain" id="projects">
+    <section className="px-0 relative blockchain" id="projects">
       <Container>
         <Row>
           <Col size={12}>

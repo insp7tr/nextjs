@@ -1010,11 +1010,160 @@ const projects = [
       "sass@1.32.7",
       "sass-loader@12.0.0",
       "vue-cli-plugin-tailwind@3.0.0",
+      "font-awesome@6.2.0",
     ],
     startDate: "10-09-2022",
     endDate: "12-09-2022",
     completed: true,
     github: "https://github.com/insp7tr/vuejs/tree/main/ip-tracking-app",
+  },
+  {
+    projectId: 21,
+    languages: ["Vue.js", ""],
+    title: "Weather Application",
+    description:
+      "Fully functional weather application that pulls real-time data from the openweather API.",
+    bannerImgUrl: "/assets/img/projects/vuejs/weather-app/result-screen-1.png",
+    type: "Frontend",
+    images: [
+      {
+        imageId: 1,
+        imageUrl: "/assets/img/projects/vuejs/weather-app/home-screen-1.png",
+        imageTitle: "Home Screen",
+      },
+      {
+        imageId: 2,
+        imageUrl:
+          "/assets/img/projects/vuejs/weather-app/information-screen.png",
+        imageTitle: "Information Screen",
+      },
+      {
+        imageId: 3,
+        imageUrl: "/assets/img/projects/vuejs/weather-app/search-screen.png",
+        imageTitle: "Search Screen",
+      },
+      {
+        imageId: 4,
+        imageUrl: "/assets/img/projects/vuejs/weather-app/result-screen-1.png",
+        imageTitle: "Result Screen 1",
+      },
+      {
+        imageId: 5,
+        imageUrl: "/assets/img/projects/vuejs/weather-app/result-screen-2.png",
+        imageTitle: "Result Screen 2",
+      },
+      {
+        imageId: 5,
+        imageUrl: "/assets/img/projects/vuejs/weather-app/home-screen-2.png",
+        imageTitle: "Saved City Home Screen",
+      },
+    ],
+    features: [
+      "Fully functional city search using mapbox places api.",
+      "Accurate weather results using openweather api.",
+      "Ability to save or remove cities using localstorage.",
+    ],
+    packages: [
+      "axios@0.27.2",
+      "uid@2.0.0",
+      "vue@3.2.38",
+      "vue-router@4.1.5",
+      "@vitejs/plugin-vue@3.0.3",
+      "autoprefixer@10.4.9",
+      "eslint@8.22.0",
+      "eslint-plugin-vue@9.3.0",
+      "postcss@8.4.16",
+      "tailwindcss@3.1.8",
+      "vite@3.0.9",
+      "fontawesome@6.2.0",
+    ],
+    startDate: "11-09-2022",
+    endDate: "13-09-2022",
+    completed: true,
+    github: "https://github.com/insp7tr/vuejs/tree/main/weather-app",
+  },
+  {
+    projectId: 22,
+    languages: ["Next.js", ""],
+    title: "Twitter Clone",
+    description:
+      "My third take on a personal portfolio website. Portfolios are used by working professionals, companies and students to highlight their best work and display accomplishments, skills and potential. They visually showcase examples of work.",
+    bannerImgUrl:
+      "/assets/img/projects/nextjs/personal_portfolio/landing-page.png",
+    type: "Frontend",
+    images: [
+      {
+        imageId: 1,
+        imageUrl:
+          "/assets/img/projects/nextjs/personal_portfolio/landing-page.png",
+        imageTitle: "Landing page",
+      },
+      {
+        imageId: 2,
+        imageUrl:
+          "/assets/img/projects/nextjs/personal_portfolio/frameworks.png",
+        imageTitle: "Frameworks Section",
+      },
+      {
+        imageId: 3,
+        imageUrl:
+          "/assets/img/projects/nextjs/personal_portfolio/tech-stacks.png",
+        imageTitle: "Tech-Stacks Section",
+      },
+      {
+        imageId: 4,
+        imageUrl: "/assets/img/projects/nextjs/personal_portfolio/services.png",
+        imageTitle: "Services Section",
+      },
+      {
+        imageId: 5,
+        imageUrl: "/assets/img/projects/nextjs/personal_portfolio/contact.png",
+        imageTitle: "Contact Section",
+      },
+      {
+        imageId: 6,
+        imageUrl: "/assets/img/projects/nextjs/personal_portfolio/footer.png",
+        imageTitle: "Footer Section",
+      },
+      {
+        imageId: 7,
+        imageUrl:
+          "/assets/img/projects/nextjs/personal_portfolio/project-details-1.png",
+        imageTitle: "Project Details Screen 1",
+      },
+      {
+        imageId: 8,
+        imageUrl:
+          "/assets/img/projects/nextjs/personal_portfolio/project-details-2.png",
+        imageTitle: "Project Details Screen 2",
+      },
+    ],
+    features: [
+      "Showcases all languages and frameworks in a slideshow.",
+      "Fully functional contact section using Emailjs.",
+      "Full description of projects including the source code.",
+    ],
+    packages: [
+      "@chakra-ui/react",
+      "@emotion/react",
+      "@emotion/styled",
+      "bootstrap",
+      "emailjs-com",
+      "framer-motion",
+      "next",
+      "nprogress",
+      "react",
+      "react-bootstrap",
+      "react-bootstrap-icons",
+      "react-dom",
+      "react-horizontal-scrolling-menu",
+      "react-icons",
+      "react-multi-carousel",
+    ],
+    startDate: "01-08-2022",
+    endDate: "21-08-2022",
+    completed: true,
+    github: "https://github.com/insp7tr/nextjs/tree/main/personal_portfolio",
   },
 ];
 

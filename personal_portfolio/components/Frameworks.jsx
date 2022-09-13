@@ -43,7 +43,7 @@ const Frameworks = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="bg-tertiary-dark-bg rounded-3xl text-center py-16 px-12 -mt-16">
+            <div className="bg-custom-gradient rounded-3xl text-center py-16 px-12">
               <h5>What Skills I Have</h5>
               <h2 className="mb-5 text-4xl sm:text-5xl">
                 Languages and Frameworks
@@ -66,7 +66,7 @@ const Frameworks = () => {
                   <h5>C#</h5>
                 </div>
                 <div className="w-1/2 mx-auto mt-0 mb-3.5">
-                  <div className="w-full mt-12 mb-24">
+                  <div className="w-full mt-14 mb-16">
                     <Image src={goLogo} alt="" />
                   </div>
                   <h5>Golang</h5>

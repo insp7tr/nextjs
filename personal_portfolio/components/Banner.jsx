@@ -62,10 +62,15 @@ const Banner = () => {
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <div>
-              <span className="tagline">Welcome to my Portfolio</span>
+              <span className="tagline bg-custom-gradient">
+                Welcome to my Portfolio
+              </span>
               <h1>
                 {`Hi! I'm Talha, `}
-                <span className="txt-rotate" data-rotate={toRotate}>
+                <span
+                  className="txt-rotate text-purple-600"
+                  data-rotate={toRotate}
+                >
                   <span className="wrap">{text}</span>
                 </span>
               </h1>
