@@ -16,8 +16,29 @@ import nodeLogo from "/public/assets/img/logos/nodeLogo.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
+import { useState } from "react";
+
+const frameworkLogos = [
+  flutterLogo,
+  csharpLogo,
+  cppLogo,
+  dartLogo,
+  goLogo,
+  javaLogo,
+  kotlinLogo,
+  swiftLogo,
+  pythonLogo,
+  reactLogo,
+  htmlLogo,
+  tsLogo,
+  angularLogo,
+  vueLogo,
+  nodeLogo,
+];
 
 const Frameworks = () => {
+  const [paddingTop, setPaddingTop] = useState("0");
+
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -48,7 +69,25 @@ const Frameworks = () => {
               <h2 className="mb-5 text-4xl sm:text-5xl">
                 Languages and Frameworks
               </h2>
-              <Carousel
+              <div className="relative h-32 w-full overflow-x-hidden">
+                <div className="flex justify-center gap-2 track w-[500%]">
+                  {frameworkLogos.map((item, index) => (
+                    <div key={index}>
+                      <div className="product-card h-full">
+                        <Image
+                          src={item}
+                          width={"100px"}
+                          height={"100px"}
+                          objectFit="contain"
+                          className="product-image"
+                          alt="product image"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              {/* <Carousel
                 responsive={responsive}
                 infinite={true}
                 className="owl-carousel owl-theme skill-slider"
@@ -143,7 +182,7 @@ const Frameworks = () => {
                   </div>
                   <h5>Node</h5>
                 </div>
-              </Carousel>
+              </Carousel> */}
             </div>
           </div>
         </div>

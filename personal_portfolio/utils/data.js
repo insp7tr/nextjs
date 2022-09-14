@@ -1087,7 +1087,7 @@ const projects = [
     languages: ["Next.js", ""],
     title: "Twitter Clone",
     description:
-      "My third take on a personal portfolio website. Portfolios are used by working professionals, companies and students to highlight their best work and display accomplishments, skills and potential. They visually showcase examples of work.",
+      "Twitter is a microblogging and social networking service on which users post and interact with messages known as 'tweets', owned by American company Twitter, Inc.",
     bannerImgUrl:
       "/assets/img/projects/nextjs/personal_portfolio/landing-page.png",
     type: "Frontend",

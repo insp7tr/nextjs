@@ -53,7 +53,7 @@ export const Web = () => {
                       NextJS
                     </Nav.Link>
                   </Nav.Item>
-                  <Nav.Item className="w-full sm:w-1/2">
+                  <Nav.Item className="w-full sm:w-1/3">
                     <Nav.Link
                       eventKey="four"
                       className="bg-transparent rounded-t-3xl py-3 px-0 text-white w-full text-base tracking-wider font-medium relative transition text-center z-0"
@@ -61,12 +61,20 @@ export const Web = () => {
                       ASP.NET
                     </Nav.Link>
                   </Nav.Item>
-                  <Nav.Item className="w-full sm:w-1/2">
+                  <Nav.Item className="w-full sm:w-1/3">
                     <Nav.Link
                       eventKey="five"
                       className="bg-transparent rounded-t-3xl py-3 px-0 text-white w-full text-base tracking-wider font-medium relative transition text-center z-0"
                     >
                       VueJS
+                    </Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item className="w-full sm:w-1/3">
+                    <Nav.Link
+                      eventKey="six"
+                      className="bg-transparent rounded-t-3xl py-3 px-0 text-white w-full text-base tracking-wider font-medium relative transition text-center z-0"
+                    >
+                      Angular
                     </Nav.Link>
                   </Nav.Item>
                 </Nav>
@@ -114,6 +122,16 @@ export const Web = () => {
                           return <ProjectCard key={index} {...project} />;
                         }
                       })}
+                    </Row>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="six">
+                    <Row>
+                      {/* {projects?.map((project, index) => {
+                        if (project?.languages[0] === "Vue.js") {
+                          return <ProjectCard key={index} {...project} />;
+                        }
+                      })} */}
+                      <NotUploaded />
                     </Row>
                   </Tab.Pane>
                 </Tab.Content>

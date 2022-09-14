@@ -20,7 +20,6 @@
 }
 
 /************ Default Css ************/
-
 * {
   margin: 0;
   padding: 0;
@@ -126,6 +125,13 @@ select:focus {
   );
 }
 
+/* .bg-stars {
+  background-image: url("../assets/bg-stars.svg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: top center;
+} */
+
 .btn {
   width: max-content;
   display: inline-block;
@@ -168,11 +174,32 @@ p.danger {
   margin-top: 0;
   padding: 100px 0 100px 0;
 }
-.project-details-page {
-  background-image: url("../assets/bg-stars.svg");
-  background-repeat: repeat-y;
-  background-size: cover;
-  background-position: top center;
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 15s linear infinite;
+}
+.product-card {
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+  color: #324d67;
+}
+.product-card:hover {
+  transform: scale(1.1, 1.1);
+}
+.product-image {
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 .tagline {
   font-weight: 700;
@@ -841,9 +868,13 @@ footer {
 }
 .nav-link#web-tabs-tab-five {
   border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 0px 0px 0px;
+}
+.nav-link#web-tabs-tab-six {
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 0px 20px 20px;
 }
-.nav-link#web-tabs-tab-five::before {
+.nav-link#web-tabs-tab-six::before {
   border-radius: 0 0px 19px 19px;
 }
 
@@ -874,9 +905,13 @@ footer {
   }
   .nav-link#web-tabs-tab-five {
     border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0 0px 0px 0px;
+  }
+  .nav-link#web-tabs-tab-six {
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 0 0px 20px 0px;
   }
-  .nav-link#web-tabs-tab-five::before {
+  .nav-link#web-tabs-tab-six::before {
     border-radius: 0 0px 19px 0px;
   }
 }
@@ -1027,7 +1062,7 @@ nav a {
   border-radius: 50%;
   display: flex;
   color: var(--color-light);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 nav a:hover {
@@ -1036,6 +1071,6 @@ nav a:hover {
 }
 
 nav a.active {
-  background: var(--color-primary);
-  color: var(--color-primary-variant);
+  background: var(--color-light);
+  color: var(--color-primary);
 }

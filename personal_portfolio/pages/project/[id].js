@@ -10,13 +10,9 @@ import { Box, Text, Flex } from "@chakra-ui/react";
 
 const ProjectDetails = ({
   project: {
-    projectId,
-    project,
+    languages,
     title,
     description,
-    bannerImgUrl,
-    bannerType,
-    backendLang,
     images,
     features,
     packages,
@@ -28,7 +24,7 @@ const ProjectDetails = ({
   },
 }) => {
   return (
-    <div className="project-details-page bg-black">
+    <div className="">
       <Link href={"/"} passHref>
         <button className="w-full p-2">
           <MdOutlineArrowBackIosNew size={50} />
@@ -40,7 +36,7 @@ const ProjectDetails = ({
             fontSize="3xl"
             marginBottom="2"
             fontWeight="bold"
-            className="tagline"
+            className="tagline bg-custom-gradient"
           >
             {title}
           </Text>
@@ -52,7 +48,7 @@ const ProjectDetails = ({
             marginBottom="2"
             marginTop="10"
             fontWeight="bold"
-            className="tagline"
+            className="tagline bg-custom-gradient"
           >
             Description
           </Text>
@@ -67,7 +63,7 @@ const ProjectDetails = ({
               marginBottom="2"
               marginTop="7"
               fontWeight="bold"
-              className="tagline"
+              className="tagline bg-custom-gradient"
             >
               Features
             </Text>
@@ -95,10 +91,10 @@ const ProjectDetails = ({
               borderColor="gray.100"
               p="3"
             >
-              <Text fontWeight="bold" className="tagline">
+              <Text fontWeight="bold" className="tagline bg-custom-gradient">
                 Start Date:
               </Text>
-              <Text fontWeight="bold" className="tagline">
+              <Text fontWeight="bold" className="tagline bg-custom-gradient">
                 {startDate}
               </Text>
             </Flex>
@@ -109,10 +105,10 @@ const ProjectDetails = ({
               borderColor="gray.100"
               p="3"
             >
-              <Text fontWeight="bold" className="tagline">
+              <Text fontWeight="bold" className="tagline bg-custom-gradient">
                 End Date:
               </Text>
-              <Text fontWeight="bold" className="tagline">
+              <Text fontWeight="bold" className="tagline bg-custom-gradient">
                 {endDate}
               </Text>
             </Flex>
@@ -127,7 +123,7 @@ const ProjectDetails = ({
               p="3"
               marginBottom="20px"
             >
-              <Text fontWeight="bold" className="tagline">
+              <Text fontWeight="bold" className="tagline bg-custom-gradient">
                 <VscGithub />
               </Text>
               <a
@@ -136,27 +132,27 @@ const ProjectDetails = ({
                 target="_blank"
                 rel="noreferrer"
               >
-                <Text fontWeight="bold" className="tagline">
+                <Text fontWeight="bold" className="tagline bg-custom-gradient">
                   Github Source Code
                 </Text>
               </a>
-              <Text fontWeight="bold" className="tagline">
+              <Text fontWeight="bold" className="tagline bg-custom-gradient">
                 Leave a star!
               </Text>
-              <Text fontWeight="bold" className="tagline">
+              <Text fontWeight="bold" className="tagline bg-custom-gradient">
                 <ImWink2 />
               </Text>
             </Flex>
           </Flex>
 
-          {packages && (
+          {languages[0] && (
             <Text
               fontSize="2xl"
               fontWeight="black"
               marginTop="5"
-              className="tagline"
+              className="tagline bg-custom-gradient"
             >
-              {project} Packages:
+              {languages[0]} Packages:
             </Text>
           )}
           <Flex flexWrap="wrap">
@@ -175,14 +171,14 @@ const ProjectDetails = ({
               </Text>
             ))}
           </Flex>
-          {backendPackages && (
+          {languages[1] && (
             <Text
               fontSize="2xl"
               fontWeight="black"
               marginTop="5"
-              className="tagline"
+              className="tagline bg-custom-gradient"
             >
-              {backendLang} Packages:
+              {languages[1]} Packages:
             </Text>
           )}
           <Flex flexWrap="wrap">

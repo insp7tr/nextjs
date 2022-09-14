@@ -12,7 +12,7 @@ import { Footer, Nav } from "../layouts";
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="bg-stars">
       <Nav />
       <Banner />
       <Frameworks />
